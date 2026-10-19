@@ -210,7 +210,7 @@ function TourCard({
           </button>
         )}
 
-        {tour.status !== "cancelled" && !cfg.next && tour.status !== "cancelled" && (
+        {tour.status !== "cancelled" && !cfg.next && (
           <button
             onClick={() => onUpdate({ status: "cancelled" })}
             className="btn-ghost text-xs py-1.5 px-3 text-red-500 hover:bg-red-50"

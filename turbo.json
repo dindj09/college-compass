@@ -3,7 +3,8 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"],
+      "env": ["ANTHROPIC_API_KEY", "LLM_MODEL_SCHOOLS", "LLM_MODEL_STRENGTHEN", "LLM_MODEL_ESSAY"]
     },
     "dev": {
       "cache": false,
